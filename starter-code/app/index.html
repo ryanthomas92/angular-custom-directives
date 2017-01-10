@@ -22,15 +22,15 @@
         <section id="cards" class='container-fluid' ng-controller="CardsController as cards">
           <div class='row'>
 
-            <div class='col-sm-6 col-md-6 col-lg-4' ng-repeat="card in cards.questions" >
-              <div class='card'>
-                <h4 class="card-title">{{card.question}}</h4>
-                <h6>Cards Against Assembly</h6>
+              <div class="col-sm-6 sol-md-6 col-lg-4" ng-repeat="card in cards.questions" >
+                <wdi-card question="{{card.question}}"></wdi-card>
               </div>
             </div>
 
-          </div>
         </section>
+      </div>
+
+      <wdi-card question="why is this game fun?"></wdi-card>
 
       <footer>
         <p>Made with <span class='heart'>♥︎</span> at General Assembly</p>
