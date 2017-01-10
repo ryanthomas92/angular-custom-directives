@@ -16,7 +16,11 @@
         <header class='navbar'>
           <h1 class='pull-left'>Cards Against Assembly</h1>
 
-          <scores></scores>
+          <div class="" ng-controller="PlayersController as players">
+            <div class="" ng-repeat="player in players.players">
+              <wdi-scores player="{{player.name}}" score="{{player.points}}"></wdi-scores>
+            </div>
+          </div>
         </header>
 
         <section id="cards" class='container-fluid' ng-controller="CardsController as cards">
